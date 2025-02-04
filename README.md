@@ -138,7 +138,7 @@ Then you can check to make sure it is running using
 squeue -u unccusername
 ```
 
-IF THIS STEP DOES NOT WORK - EMAIL Dr. LABELLA IMMEDIATELY! 
+IF THIS STEP DOES NOT WORK - EMAIL Dr. YOHE IMMEDIATELY! 
 
 When the assembly is done you will see a file called "slurm-number.out" that will be the report of the run
 
