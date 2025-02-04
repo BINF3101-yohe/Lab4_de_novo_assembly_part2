@@ -1,4 +1,4 @@
-# Lab3_de_novo_assembly_part2
+# Lab4 _de novo_ assembly part2!
 
 # Outline
 
