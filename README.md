@@ -35,20 +35,18 @@ We now need to assemble those DNA fragments into a genome assembly. Most of the 
 You may have made a new folder for lab2 or you may have worked in your home directory. This time, let's create a new folder and copy our sequences into that folder
 
 ```bash
-mkdir lab_3
+mkdir lab_4
 ```
 
-Then copy your processed read files into the lab_3 directory. If you saved yours somewhere else, you should amend this command.
+Then copy your processed read files into the lab_4 directory. If you saved yours somewhere else, you should amend this command.
 
 ```bash
-cp lab_2/SRRXXXXXXX/SRRXXXXXXX_1_paired.fastq.gz lab_3/.
-cp lab_2/SRRXXXXXXX/SRRXXXXXXX_2_paired.fastq.gz lab_3/.
+cp lab_3/SRRXXXXXXX/SRRXXXXXXX_1_paired.fastq.gz lab_4/.
+cp lab_3/SRRXXXXXXX/SRRXXXXXXX_2_paired.fastq.gz lab_4/.
 ```
-This may take a second. Once it is done, navigate into the lab_3 directory using ```cd```
+This may take a second. Once it is done, navigate into the lab_4 directory using ```cd```
 &nbsp;
 
-
-**IMPORTANT NOTE - ADDED AFTER CLASS 9/5/24**
 
 When you copy over your files, they may appear RED when you type ls
 
