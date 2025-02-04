@@ -48,9 +48,7 @@ This may take a second. Once it is done, navigate into the lab_4 directory using
 &nbsp;
 
 
-When you copy over your files, they may appear RED when you type ls
-
-![image](https://github.com/user-attachments/assets/83f0f001-052e-4ab4-b0ef-2f31bf81ddbf)
+When you copy over your files, they may appear RED when you type ls.
 
 If you are colorblind - do this step anyway.
 
