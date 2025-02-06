@@ -116,8 +116,40 @@ cp /projects/class/binf3101_001/abyss.slurm .
 ### Step 3b - Edit the slurm script
 
 You will need to edit the slurm script to include your k-mer number after "k=" and change SRXXXXXX to your SRR number
+```bash
+#!/bin/bash 
 
-![image](https://github.com/user-attachments/assets/58dd1308-5db4-47d9-af28-8727f806c0fb)
+#SBATCH --partition=Centaurus
+#SBATCH --job-name=abyss_job
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --time=1:00:00
+#SBATCH --mem-per-cpu=20G
+
+echo "======================================================"
+echo "Start Time  : $(date)"
+echo "Submit Dir  : $SLURM_SUBMIT_DIR"
+echo "Job ID/Name : $SLURM_JOBID : $SLURM_JOB_NAME"
+echo "Node List   : $SLURM_JOB_NODELIST"
+echo "Num Tasks   : $SLURM_NTASKS total [$SLURM_NNODES nodes @ $SLURM_CPUS_ON_NODE CPUs/node]"
+echo "======================================================"
+echo ""
+
+
+mkdir tmp
+export TMPDIR=$SLURM_SUBMIT_DIR/tmp
+
+module load abyss/2.3.7
+
+cd $SLURM_SUBMIT_DIR
+abyss-pe k=38 B=10G name="SRRXXXXXXXX" in="./SRRXXXXXXXX_1_paired.fastq.gz ./SRRXXXXXXXX_2_paired.fastq.gz"
+
+
+echo ""
+echo "======================================================"
+echo "End Time   : $(date)"
+echo "======================================================"
+```
 
 
 Refer to lab #1 if you need help remembering how to edit a file using vi or nano. 
