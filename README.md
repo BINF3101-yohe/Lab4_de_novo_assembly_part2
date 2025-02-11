@@ -244,33 +244,15 @@ Report the following genome statistics in the Canvas assignment
 
 ## Step 5 - Filter the small contigs from our genome 
 
-In the Quast output you should see a line that says "All statistics are based on contigs of size >= 500 bp". We want to remove the small contigs from our genome. We will use a custom python script to do that
+In the Quast output you should see a line that says "All statistics are based on contigs of size >= 500 bp". We want to remove the small contigs from our genome. We will use a script from the super awesome bbtools package.
 
-### Step 5a - Copy the script from the class folder
-
-Copy the script from the class folder
-```bash
-cp /projects/class/binf3101_001/filter_by_length.py .
-```
-
-This will copy the script to your current directory
-
-### Step 5b - Find largest contig size
-
-You will need to look at your Quast results and **find the size of your largest contig**
-
-### Step 5c - Filter your genome
+### Step 5a - Filter your genome
 
 Now we will filter the genome to remove contigs that are less than 500bp long. 
 
-**If you are getting "cannot import matplotlib" you must load anaconda3**
-
 ```bash
-module load anaconda3
-python filter_by_length.py SRRXXXXXXX-contigs.v1.fa SRRXXXXXXX-contigs.v2.fa 500 NyourlargestN
+/projects/class/binf3101_001/bbmap/reformat.sh in=SRRXXXXXXX-contigs.v1.fa out=SRRXXXXXXX-contigs.v2.fa minlength=500
 ```
-
-Don't forget! You will need to change the larger number to your biggest contig size. 
 
 ## LQ 3
 
