@@ -93,9 +93,9 @@ This will take a moment! So take some time to review the next few steps
 ### Step 2b - Find our optimal k-mer size
 
 You will get a printout from you run that contains your optimal k-mer size. Write it down! You will need it for the next step. 
+<img width="805" alt="Screenshot 2025-02-21 at 9 19 42 AM" src="https://github.com/user-attachments/assets/4569d2bd-047e-484a-9b39-6e2f79ba204d" />
 
-![image](https://github.com/BINF-3101/Lab3_de_novo_assembly_part2/assets/47755288/e16a4883-1e12-4f6d-a3ea-458546df2f12)
-
+You can see for mine it is 83!
 ## LQ 1
 
 What k-mer size was chosen for you by kmergenie?
@@ -142,7 +142,7 @@ export TMPDIR=$SLURM_SUBMIT_DIR/tmp
 module load abyss/2.3.7
 
 cd $SLURM_SUBMIT_DIR
-abyss-pe k=38 B=10G name="SRRXXXXXXXX" in="./SRRXXXXXXXX_1_paired.fastq.gz ./SRRXXXXXXXX_2_paired.fastq.gz"
+abyss-pe k=## B=10G name="SRRXXXXXXXX" in="./SRRXXXXXXXX_1_paired.fastq.gz ./SRRXXXXXXXX_2_paired.fastq.gz"
 
 
 echo ""
