@@ -57,6 +57,8 @@ You will need to use the command below to turn the files GREEN
 chmod 777 SRRXXXXXX_1_paired.fastq.gz
 chmod 777 SRRXXXXXX_2_paired.fastq.gz
 ```
+<img width="610" alt="Screenshot 2025-02-21 at 9 14 35 AM" src="https://github.com/user-attachments/assets/085df29a-57fc-42f2-9d9e-f32e92d6ff96" />
+
 
 ## Step 2 - Identify kmer length
 
@@ -105,13 +107,11 @@ Now we will use a genome assembler called ABySS (Assembly By Short Sequences). W
 
 ### Step 3a - Copy the slurm script
 
-Copy the slurm script from the class folder to your directory where you have the sequence files
-
-```bash
-cp /projects/class/binf3101_001/abyss.slurm .
+Make a new slurm script 
 ```
-
-**TIP** The "." in the command above means "here". You are copying (cp) the first file (/projects/class/binf3101_001/abyss.slurm) to here (.)
+abyss.slurm
+```
+or copy the file into your lab_4 directory.
 
 ### Step 3b - Edit the slurm script
 
